@@ -15,6 +15,19 @@
 
 文档首先通过document_loader加载，然后由vectorizer转换为向量，存入vector_store，当用户查询时，retriever从vector_store中检索相关信息，最后由agent整合结果并返回结构化响应。每个模块都有特定的输入输出接口，确保数据能够顺畅地在整个系统中流动。
 
+
+## 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+## 测试
+
+```bash
+python -m unittest discover -s tests
+```
+
 ## 使用方法
 
 ```python
@@ -32,11 +45,7 @@ response = agent.query("什么是CRISPR-Cas9系统？")
 print(response)
 ```
 
-## 安装依赖
 
-```bash
-pip install -r requirements.txt
-```
 
 ## 项目结构
 
