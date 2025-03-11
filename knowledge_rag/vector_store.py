@@ -10,7 +10,7 @@ import numpy as np
 
 from langchain_community.vectorstores import FAISS, Chroma
 from langchain_core.embeddings import Embeddings
-from langchain_core.documents import Document  # 添加这行导入
+from langchain_core.documents import Document 
 
 from knowledge_rag.vectorizer import TextVectorizer
 

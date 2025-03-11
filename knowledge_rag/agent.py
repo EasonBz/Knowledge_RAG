@@ -1,5 +1,5 @@
-"""生物学知识Agent接口
-
+"""
+生物学知识Agent接口
 这个模块实现了生物学知识Agent的主要接口，
 负责接收查询、执行检索并生成结构化响应。
 """
@@ -19,7 +19,6 @@ from knowledge_rag.retriever import KnowledgeRetriever
 
 class BioKnowledgeAgent:
     """生物学知识Agent，负责处理生物学知识查询"""
-    
     def __init__(self, 
                  model_name: str = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
                  use_openai: bool = False,
